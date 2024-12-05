@@ -1,0 +1,100 @@
+.blog {
+  /* Add any specific styles for the blog page */
+}
+
+.hero {
+  padding: 5rem 0;
+}
+
+.postsSection {
+  padding: 4rem 0;
+}
+
+.postsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.postCard {
+  background-color: var(--elite-navy);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.postCard h2 {
+  color: var(--quantum-purple);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.postCard p {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.postMeta {
+  display: flex;
+  justify-content: space-between;
+  color: var(--gray-400);
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.readMore {
+  color: var(--quantum-purple);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.readMore:hover {
+  text-decoration: underline;
+}
+
+.newsletter {
+  background-color: var(--elite-navy);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.newsletter h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.newsletter p {
+  color: white;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.subscribeForm {
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.emailInput {
+  flex-grow: 1;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.subscribeButton {
+  background-color: var(--quantum-purple);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.subscribeButton:hover {
+  background-color: var(--quantum-purple-dark);
+}
+

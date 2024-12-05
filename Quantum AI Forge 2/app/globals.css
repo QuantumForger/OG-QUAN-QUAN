@@ -1,0 +1,95 @@
+:root {
+  --deep-space-blue: #0B2447;
+  --elite-navy: #19376D;
+  --quantum-purple: #7C3AED;
+  --success-green: #059669;
+  --text-light: #F8FAFC;
+  --text-dark: #1E293B;
+}
+
+body {
+  background: var(--deep-space-blue);
+  color: var(--text-light);
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.neural-overlay {
+  background-image: url('/images/neural-overlay.png');
+  opacity: 0.03;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.quantum-grid {
+  background-image: url('/images/quantum-grid.png');
+  background-size: cover;
+  opacity: 0.1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.cta-button {
+  background-color: var(--quantum-purple);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  box-shadow: 0 0 15px var(--quantum-purple);
+  transform: translateY(-2px);
+}
+
+.success-metric {
+  color: var(--success-green);
+  font-weight: bold;
+}
+
+.case-study {
+  background-color: var(--elite-navy);
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.premium-feature {
+  border: 2px solid var(--quantum-purple);
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+/* Glassmorphic effect */
+.glassmorphic {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Improved text visibility */
+.text-shadow {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
