@@ -1,0 +1,67 @@
+.caseStudies {
+  /* Add any specific styles for the case studies page */
+}
+
+.hero {
+  padding: 5rem 0;
+}
+
+.studiesSection {
+  padding: 4rem 0;
+}
+
+.studyCard {
+  background-color: var(--elite-navy);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.studyCard h2 {
+  color: var(--quantum-purple);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.studyCard p {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.studyCard p span {
+  font-weight: bold;
+}
+
+.cta {
+  background-color: var(--elite-navy);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.cta h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  color: white;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.ctaButton {
+  background-color: var(--quantum-purple);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.ctaButton:hover {
+  box-shadow: 0 0 15px var(--quantum-purple);
+  transform: translateY(-2px);
+}
+

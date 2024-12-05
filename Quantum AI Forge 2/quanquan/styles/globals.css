@@ -1,0 +1,153 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --deep-space-blue: #0B2447;
+  --elite-navy: #19376D;
+  --quantum-purple: #7C3AED;
+  --success-green: #059669;
+  --text-light: #F8FAFC;
+  --text-dark: #1E293B;
+}
+
+body {
+  background: var(--deep-space-blue);
+  color: var(--text-light);
+  font-family: 'Inter', sans-serif;
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quantum-glow {
+  text-shadow: 0 0 10px var(--quantum-purple), 0 0 20px var(--quantum-purple), 0 0 30px var(--quantum-purple);
+  animation: pulse 3s infinite;
+}
+
+.neural-bg {
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(91, 33, 182, 0.1) 0%, transparent 20%),
+    radial-gradient(circle at 80% 60%, rgba(124, 58, 237, 0.1) 0%, transparent 20%);
+  background-size: 100% 100%;
+  background-position: 0 0, 0 0;
+  animation: neural-animation 15s ease infinite alternate;
+}
+
+@keyframes neural-animation {
+  0% {
+    background-position: 0% 0%, 100% 100%;
+  }
+  100% {
+    background-position: 100% 100%, 0% 0%;
+  }
+}
+
+.text-gradient {
+  background: linear-gradient(45deg, var(--text-light), var(--quantum-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.hover\:shadow-glow-purple:hover {
+  box-shadow: 0 0 15px var(--quantum-purple);
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+.hover\:scale-105:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--elite-navy), var(--quantum-purple));
+}
+
+.hover\:from-quantum-purple:hover {
+  background-image: linear-gradient(to right, var(--quantum-purple), var(--elite-navy));
+}
+
+.hover\:shadow-glow-purple:hover {
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.7);
+}
+
+.transform {
+  transition: transform 0.3s ease-in-out;
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, var(--quantum-purple), var(--success-green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.bg-split-gradient {
+  background: linear-gradient(90deg, 
+    var(--deep-space-blue) 0%, 
+    var(--elite-navy) 50%, 
+    var(--quantum-purple) 100%
+  );
+}
+
+.hover-lift {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(124, 58, 237, 0.2);
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.bg-neural-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+}
+

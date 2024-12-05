@@ -1,0 +1,9 @@
+This folder is for storing static image assets for the Quantum AI Forge project.
+You can place your image files (e.g., .jpg, .png, .svg) directly in this folder.
+They will be publicly accessible and can be referenced in your components using the path "/images/filename.ext".
+
+Example usage in a component:
+<img src="/images/logo.png" alt="Quantum AI Forge Logo" />
+
+Feel free to delete this placeholder file once you've added your own images.
+
